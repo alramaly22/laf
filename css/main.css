@@ -1,0 +1,431 @@
+:root
+{
+    --main-color:rgb(10, 10, 10);
+    --title-color: #f6f6f6
+}
+.parent
+{
+    width: 100%;
+}
+*
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+}
+body
+{
+    font-family: "work sans", sans-serif;
+}
+header
+{
+    width: 100%;
+    background-color: #fff;
+}
+header .logo
+{
+    width: 60px;
+}
+header .container
+{
+    height: 50px;
+    padding-left: 125px;
+    padding-right: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 576px) { 
+    header .container
+    {
+        padding: 50px;
+    }
+ }
+ .container i
+{
+    font-size: 30px;
+} 
+.section-1
+{
+    width: 100%;
+    height:173vh;
+    margin: auto;
+    background-image: url(../images/lodo.jpg);
+    overflow: hidden;
+    position: relative;
+}
+@media (max-width: 576px)
+{
+    .section-1
+    {
+        height:133vh;
+    }
+}
+.section-1 .discription
+{   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.section-1 h1
+{
+    text-align: center;
+    padding: 30px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: -3px;
+}
+.section-1 p
+{
+    text-align: center;
+    color: rgb(86, 104, 114);
+}
+.function 
+{
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: #fafafa;
+}
+.function .container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding-top:20px ;
+    padding-bottom: 20px;
+}
+.function .container .card
+{
+    border: 0 ;
+}
+.function .container .card:hover
+{
+    -webkit-box-shadow: 5px 10px #777;
+    -moz-box-shadow: 5px 10px #777;
+    box-shadow: 5px 10px #777;
+}
+.function .container .card i
+{
+    color: var(--main-color);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 25px;
+}
+.function .container .card h2
+{
+    font-weight: bold;
+    border: 0 ;
+    text-align: center;
+}
+.function .container .card p{
+    text-align: center;
+    color: rgb(86, 104, 114);
+}
+.services
+{
+    width: 100%;
+    margin-top: 0ox;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.spicial-heading
+{
+    margin-top: 0px;
+    font-weight: 800;
+    font-size: 80px;
+    letter-spacing: -2px;
+    color: #ebeced;
+    text-align: center;
+}
+.spicial-heading + p
+{
+    text-align: center;
+    margin-top: -41px;
+    font-size: 20px;
+    color: #575757;
+}
+.services .container .holder
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding-top:20px ;
+    padding-bottom: 20px;
+}
+.services .container .card
+{
+    border: 0px;
+}
+.services .container .card .info
+{
+    margin-top: -50px;
+}
+.services .container .card i
+{
+    color: var(--main-color);
+    flex-basis: 60px;
+    padding-top: 15px;
+}
+@media (max-width: 576px)
+{
+    .services .container .card i
+    {
+        padding-left: 20px;
+    }
+}
+.services .container .card h3
+{
+    font-weight: bold;
+    border: 0 ;
+    text-align: center;
+}
+.services .container .card p
+{
+    text-align: center;
+    color: rgb(86, 104, 114);
+    margin-top: 30px;
+    padding-left: 40px;
+}
+.services .container .image
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+@media (max-width: 576px)
+{
+    .services .container .image
+    {
+        display: none;
+    }
+}
+.services .container .image:before
+{
+    content: "";
+    position: absolute;
+    background-color: #2c4755;
+    right: -40px;
+    top: -50px;
+    width: 100px;
+    height: 400px;
+}
+.portoflio 
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fafafa;
+}
+
+.portoflio .container  img
+{
+    min-width:200px ;
+    max-width: 100%;
+    height: 200px;
+    text-align: center;
+
+}
+.portoflio .container .holder
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding-top:20px ;
+    padding-bottom: 20px;
+}
+.portoflio .container .holder .card
+{
+    border: 0;
+    margin-top:30px ;
+    text-align: left;
+}
+.portoflio .container .holder .card .text
+{
+    padding: 20px;
+    margin-bottom: 0;
+}
+.portoflio .container .holder .card .text h4
+{
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+.portoflio .container .holder .card .text p
+{
+    color: #777;
+    letter-spacing: 0;
+    line-height: 1.6;
+}
+.about
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.about .container
+{
+    margin-top: 50px;
+}
+.about .container .holder
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+@media (max-width: 576px)
+{
+    .about .container .holder
+    {
+        justify-content: center;
+    }
+}
+.about .container .holder .image
+{
+    width: 250px;
+    height: 375px;
+    position: relative;
+}
+.about .container .holder .image:before
+{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: calc(100% + 100px);
+    left: -20px;
+    top: -50px;
+    z-index: -1;
+    background-color: #fafafa;
+}
+.about .container .holder .image:after
+{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 60%;
+    top: -20px;
+    z-index: -1;
+    border-left: 60px solid var(--main-color);
+    border-bottom: 60px solid var(--main-color);
+    right: -60px;
+}
+.about .container .holder .image img
+{
+    max-width: 100%;
+}
+@media (max-width: 576px)
+{
+    .about .container .holder .image img
+    {
+        width: 90%;
+    }  
+}
+.about .container .holder .text
+{
+    flex-basis: calc(100% - 500px);
+}
+@media (max-width: 576px)
+{
+    .about .container .holder .text
+    {
+        flex-basis: 300px;
+    }
+}
+.about .container .holder .text p:first-of-type
+{
+    font-weight: bold;
+    color: #334752;
+    padding-bottom: 30px;
+    line-height: 1.8;
+}
+.about .container .holder .text  hr
+{
+    width: 50%;
+    height: 0;
+    display: inline-block;
+    border: 2px solid var(--main-color);
+}
+.about .container .holder .text p:last-of-type
+{
+    color:#777;
+    line-height: 1;
+}
+.contact
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fafafa;
+}
+.contact .text{
+    padding-left: 200px;
+    text-align: center;
+}
+.contact .text .label
+{
+    margin-left: -350px;
+    font-weight: 800;
+    font-size: 50px;
+    color: #2c4755;
+}
+@media (max-width: 576px)
+{
+    .contact .text .label
+    {
+        margin-left: -189px;
+        font-size: 30px;
+    }
+}
+.contact .text .link a
+{
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: -200px;
+}
+@media (max-width: 576px)
+{
+    .contact .text .link a{
+        font-size: 25px;
+    }
+}
+.contact .text .social
+{
+    padding-top: 30px;
+    margin-left: -200px;
+}
+.contact .text .social a{
+    font-size: 30px;
+    padding: 20px;
+    color: #334752;
+}
+@media (max-width: 576px)
+{
+    .contact .text .social a{
+        font-size: 25px;
+        padding: 15px;
+
+    }
+
+}
+
+footer div
+{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #2c4755;
+    align-items: center;
+    justify-content: center;
+}
+footer div p{
+    font-size: 18px;
+    color: #fff;
+}
+footer div p span{
+    color: var(--main-color);
+}
